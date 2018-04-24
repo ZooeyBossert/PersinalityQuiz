@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		63EE9B52208F748E005544FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE9B51208F748E005544FB /* AppDelegate.swift */; };
-		63EE9B54208F748E005544FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE9B53208F748E005544FB /* ViewController.swift */; };
+		63EE9B54208F748E005544FB /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE9B53208F748E005544FB /* IntroductionViewController.swift */; };
 		63EE9B57208F748E005544FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EE9B55208F748E005544FB /* Main.storyboard */; };
 		63EE9B59208F7492005544FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63EE9B58208F7492005544FB /* Assets.xcassets */; };
 		63EE9B5C208F7492005544FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EE9B5A208F7492005544FB /* LaunchScreen.storyboard */; };
 		63EE9B67208F7493005544FB /* PersinalityQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE9B66208F7493005544FB /* PersinalityQuizTests.swift */; };
 		63EE9B72208F7493005544FB /* PersinalityQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE9B71208F7493005544FB /* PersinalityQuizUITests.swift */; };
+		63EE9B80208F854D005544FB /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE9B7F208F854C005544FB /* QuestionViewController.swift */; };
+		63EE9B82208F856B005544FB /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE9B81208F856B005544FB /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		63EE9B4E208F748E005544FB /* PersinalityQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersinalityQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EE9B51208F748E005544FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63EE9B53208F748E005544FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63EE9B53208F748E005544FB /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		63EE9B56208F748E005544FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63EE9B58208F7492005544FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63EE9B5B208F7492005544FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		63EE9B6D208F7493005544FB /* PersinalityQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersinalityQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EE9B71208F7493005544FB /* PersinalityQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersinalityQuizUITests.swift; sourceTree = "<group>"; };
 		63EE9B73208F7493005544FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63EE9B7F208F854C005544FB /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		63EE9B81208F856B005544FB /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				63EE9B51208F748E005544FB /* AppDelegate.swift */,
-				63EE9B53208F748E005544FB /* ViewController.swift */,
+				63EE9B53208F748E005544FB /* IntroductionViewController.swift */,
 				63EE9B55208F748E005544FB /* Main.storyboard */,
+				63EE9B7F208F854C005544FB /* QuestionViewController.swift */,
+				63EE9B81208F856B005544FB /* ResultsViewController.swift */,
 				63EE9B58208F7492005544FB /* Assets.xcassets */,
 				63EE9B5A208F7492005544FB /* LaunchScreen.storyboard */,
 				63EE9B5D208F7492005544FB /* Info.plist */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63EE9B54208F748E005544FB /* ViewController.swift in Sources */,
+				63EE9B54208F748E005544FB /* IntroductionViewController.swift in Sources */,
 				63EE9B52208F748E005544FB /* AppDelegate.swift in Sources */,
+				63EE9B80208F854D005544FB /* QuestionViewController.swift in Sources */,
+				63EE9B82208F856B005544FB /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
