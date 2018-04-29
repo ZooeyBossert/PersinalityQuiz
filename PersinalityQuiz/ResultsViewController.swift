@@ -20,6 +20,7 @@ class ResultsViewController: UIViewController {
         navigationItem.hidesBackButton = true
     }
     
+    // Calculating most common answer, aka the result
     func calculatePersonalityResult() {
         var frequencyOfAnswers: [FruitType: Int] = [:]
         let responseTypes = responses.map { $0.type }
@@ -37,6 +38,7 @@ class ResultsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // The done button did not work properly so with some help I linked it with the intro screen
     @IBAction func doneFunction(_ sender: Any) {
         print("pressed")
     }

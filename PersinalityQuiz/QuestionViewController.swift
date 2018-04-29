@@ -48,7 +48,7 @@ class QuestionViewController: UIViewController {
         updateUI()
     }
     
-    // Keep track of answer of single answer question
+    // Making a function for the single answer question
     @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
         let currentAnswers = questions[questionIndex].answers
         
@@ -67,7 +67,7 @@ class QuestionViewController: UIViewController {
         nextQuestion()
     }
     
-    // Keep track of answer of multiple answer question
+    // Making a function for the multiple answer question
     @IBAction func multipleAnswerButtonPressed(_ sender: Any) {
         let currentAnswers = questions[questionIndex].answers
         
@@ -86,6 +86,7 @@ class QuestionViewController: UIViewController {
         nextQuestion()
     }
     
+    // Making a function for the ranged question
     @IBAction func rangedAnswerButtonPressed() {
         let currentAnswers = questions[questionIndex].answers
         let index = Int(round(rangedSlider.value * Float(currentAnswers.count - 1)))
@@ -93,6 +94,7 @@ class QuestionViewController: UIViewController {
         nextQuestion()
     }
     
+    // Making a function to navigate to the next question
     func nextQuestion() {
         questionIndex += 1
         
@@ -103,6 +105,7 @@ class QuestionViewController: UIViewController {
         }
     }
     
+    // Updating the display
     func updateUI() {
         singleStackView.isHidden = true
         multipleStackView.isHidden = true
@@ -126,6 +129,7 @@ class QuestionViewController: UIViewController {
         }
     }
     
+    // The single answer question
     func updateSingleStack(using answers: [Answer]) {
         singleStackView.isHidden = false
         print(answers[0])
@@ -135,6 +139,7 @@ class QuestionViewController: UIViewController {
         singleButton4.setTitle(answers[3].text, for: .normal)
     }
     
+    // The multiple answer question
     func updateMultipleStack(using answers: [Answer]) {
         multipleStackView.isHidden = false
         multiSwitch1.isOn = false
@@ -147,6 +152,7 @@ class QuestionViewController: UIViewController {
         multiLabel4.text = answers[3].text
     }
     
+    // The ranged question
     func updateRangedStack(using answers: [Answer]) {
         rangedStackView.isHidden = false
         rangedSlider.setValue(0.5, animated: false)
@@ -154,6 +160,7 @@ class QuestionViewController: UIViewController {
         rangedLabel2.text = answers.last?.text
     }
     
+    // The content of the questions
     var questions: [Question] = [
         Question(text: "Where do you spend most of your time?",
             type:.single,

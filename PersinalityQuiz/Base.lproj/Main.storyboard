@@ -246,13 +246,13 @@
                                 <rect key="frame" x="0.0" y="283.5" width="375" height="100.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eUb-8c-UC9">
-                                        <rect key="frame" x="80.5" y="0.0" width="214" height="70.5"/>
+                                        <rect key="frame" x="78.5" y="0.0" width="218" height="70.5"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ns2-Pc-qUn">
-                                                <rect key="frame" x="-2" y="0.0" width="218" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="222" height="31"/>
                                             </slider>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="WCx-Kb-zVK">
-                                                <rect key="frame" x="0.0" y="50" width="214" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="50" width="218" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhA-dw-qCd">
                                                         <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
@@ -261,7 +261,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILQ-Uy-dUt">
-                                                        <rect key="frame" x="172" y="0.0" width="42" height="20.5"/>
+                                                        <rect key="frame" x="176" y="0.0" width="42" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -340,7 +340,6 @@
         <!--Navigation Controller-->
         <scene sceneID="neQ-Ax-rXg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="anV-LP-RAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kc5-Id-f62" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ybl-zs-H8Y">
@@ -352,6 +351,7 @@
                         <segue destination="aD3-fk-xGV" kind="relationship" relationship="rootViewController" id="vKB-YZ-Fkh"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="anV-LP-RAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="884" y="126.38680659670166"/>
         </scene>

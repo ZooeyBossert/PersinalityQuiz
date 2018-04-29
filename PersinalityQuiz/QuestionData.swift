@@ -23,9 +23,11 @@ var text: String
 var type: FruitType
 }
 
+// creating the types of fruit
 enum FruitType: Character {
     case ananas = "🍍", banana = "🍌", kiwi = "🥝", peache = "🍑"
 
+// Linking the fruit with personalities
 var definition: String {
     switch self {
         case .ananas:
